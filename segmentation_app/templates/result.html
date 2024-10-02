@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Sonuçlar</title>
+</head>
+<body>
+    <h1>Segmentasyon ve Augmentation Görüntüler</h1>
+
+    <h2>Segmentasyon Sonuçları</h2>
+    <div class="results">
+        {% for desc, img in segmented_images %}
+            <div class="image-container">
+                <h3>{{ desc }}</h3>
+                <img src="{{ url_for('static', filename='output/segmented/' ~ img) }}" alt="{{ desc }}">
+            </div>
+        {% endfor %}
+    </div>
+
+    <h2>Augmentation Görüntüler</h2>
+    <div class="results">
+        {% for desc, img in augmented_images %}
+            <div class="image-container">
+                <h3>{{ desc }}</h3>
+                <img src="{{ url_for('static', filename='output/augmented/' ~ img) }}" alt="{{ desc }}">
+            </div>
+        {% endfor %}
+    </div>
+
+    <a href="{{ url_for('upload') }}">Başka bir resim yükle</a>
+</body>
+</html>

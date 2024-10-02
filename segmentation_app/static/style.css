@@ -1,0 +1,77 @@
+/* Google Fonts - Montserrat yazı tipi */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Genel body ayarları */
+body {
+    font-family: 'Montserrat', sans-serif; /* Yazı tipini değiştirin */
+    background-color: #F5F5F5; /* Arka plan rengini açık gri yapın */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlıklar */
+h1, h2 {
+    color: #3F51B5; /* Başlık rengini koyu mavi yapın */
+    margin-bottom: 20px;
+}
+
+/* Dosya yükleme inputu */
+input[type="file"] {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Buton stili */
+button {
+    background-color: #FF5722; /* Turuncu buton arka planı */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Köşeleri yuvarlayın */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+/* Buton hover efekti */
+button:hover {
+    background-color: #E64A19; /* Buton hover rengi */
+}
+
+/* Resim sonuçları */
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Resim kutucukları */
+.image-container {
+    margin: 15px;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Resim kenarlarını yuvarlayın */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti ekleyin */
+}
+
+/* Yeni resim yükle bağlantısı */
+a {
+    color: #3F51B5; /* Mavi renk */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
